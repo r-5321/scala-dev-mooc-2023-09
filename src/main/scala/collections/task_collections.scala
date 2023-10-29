@@ -80,16 +80,6 @@ object task_collections {
    * */
   def intersectionAuto(dealerOne: Iterable[Auto], dealerTwo: Iterable[Auto]): Set[Auto] = {
 
-//    val result = for (
-//      first <- dealerOne;
-//      second <- dealerTwo;
-//      if first.mark == second.mark && first.model == second.model
-//    )
-//      yield {
-//        (first.mark, first.model)
-//      }
-//    result.toSet[Auto]
-
    (dealerOne ++ dealerTwo).toSet[Auto]
   }
 
